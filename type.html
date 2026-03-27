@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Науково популярне</title>
+    <style>
+        body {
+            background-color: #818181;
+        }
+
+        form,
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><mark>Науково популярне</mark></h1>
+        <nav>
+            <h2><strong>Сторінки</strong></h2>
+            <ul>
+                <li><a href="index.html" target="_blank">Головна</a></li>
+                <li><a href="type.html" target="_blank">історичні легенди</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h2><strong>Теми</strong></h2>
+            <ul>
+                <li><a href="intelligence">інтелект Котів певної породи</a></li>
+                <li><a href="smile">Чеширська посішка британця висловухого</a></li>
+                <li><a href="mood">Види настроїв кота</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2><strong>Найпопулярніші наукові факти про котів британців висловухих</strong></h2>
+
+            <article id="intelligence">
+                <h3>Інтелект котів певної породи</h3>
+                <figure><img src="photo_2026-03-27_12-53-04.jpg" width="400" height="300" alt="cat">
+                    <figcaption>This is my cat</figcaption>
+                </figure>
+                <p><b>Британські висловухі коти</b> (часто маються на увазі шотландські висловухі — Scottisch Fold)
+                    вирізняються високим інтелектом, допитливістю та здатністю швидко адаптуватися.</p>
+                <h3><strong>Види інтелектів</strong></h3>
+                <dl>
+                    <dt><b>Самостійність:</b></dt>
+                    <dd>Це «інтроверти» серед котів, які чудово переносять самотність, поки господар на роботі</dd>
+
+                    <dt><b>Навчання:</b></dt>
+                    <dd> Легко запам'ятовують правила дому, місце розташування туалету та дряпки.</dd>
+
+                    <dt><b>Спокій:</b></dt>
+                    <dd>Рідко нявкають без потреби, не схильні до мстивості чи зайвої агресії.</dd>
+
+                    <dt><b>Допитливість:</b></dt>
+                    <dd>Вміють розважати себе самі, цікавляться іграшками, але швидко втомлюються від галасу.</dd>
+                </dl>
+
+            </article>
+
+            <article id="smile">
+                <h3>Чеширська посішка британця висловухого</h3>
+                <figure><img src="photo_2026-03-27_14-46-10.jpg" width="300" height="200" alt="cat"></figure>
+                <p><b>Чеширська посмішка</b> — це загадкова, хитра та широка посмішка, що існує сама по собі, незалежно від її
+                    власника — Чеширського кота з казки Льюїса Керролла "Аліса в Країні Див". Вона символізує мудрість,
+                    оптимізм, незалежність, здатність до філософського ставлення до життя та можливість зникати,
+                    залишаючи по собі лише слід.</p>
+
+                    <form>
+
+                        <h4>Як ви вважаєте чи хороший це знак чеширська посмішка?</h4>
+                        <label for="yes">Так</label>
+                        <input type="radio" id="yes" name="Do-you-think-the-Cheshire-smile-is-a-good-sign?" value="yes">
+
+                        <label for="perhaps">Можливо</label>
+                        <input type="radio" id="perhaps" name="Do-you-think-the-Cheshire-smile-is-a-good-sign?" value="perhaps">
+
+                        <label for="not-at-all">Незовсім</label>
+                        <input type="radio" id="not-at-all" name="Do-you-think-the-Cheshire-smile-is-a-good-sign?" value="not-at-all">
+                        
+                    </form>
+
+            </article>
+
+            <article id="mood">
+                <h3>Види настроїв кота</h3>
+                <figure><img src="photo_2026-03-27_14-15-45.jpg" width="400" height="300" alt="cat"></figure>
+                <p><b>Настроїв буває багато, але є 4 основних:</b></p>
+                <ol>
+                    <li>
+                        <h4><mark>Веселий</mark></h4>
+                        <img src="shotlandska-vislovuha.jpg" width="260" height="200" alt="Веселий">
+                    </li>
+                    <li>
+                        <h4><mark>Злий</mark></h4>
+                        <img src="article-id-532-06.webp" width="250" height="200" alt="Злий">
+                    </li>
+                    <li>
+                        <h4><mark>Сумний</mark></h4>
+                        <img src="britanskiy-vislovuhiy-kt-harakter-zmst-cna_371.jpeg" width="260" height="200" alt="Сумний">
+                    </li>
+                    <li>
+                        <h4><mark>Допитливий</mark></h4>
+                        <img src="ryzhyj-brytanskyj-kit.jpg" width="270" height="200" alt="Допитливий">
+                    </li>
+                </ol>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Персональна інформація</legend>
+        
+        <label for="name">ім'я та прізвище</label>
+            <input type="text" id="name" name="name" 
+            minlength="5" maxlength="30" 
+            pattern="1234567890()!@#$%^&*?><"
+            title="Введіть своє ім'я та прізвище" placeholder="Введіть текст..." required>
+
+            <label for="email">Адрес електронної почти</label>
+            <input type="text" id="email" name="email" 
+            minlength="15" maxlength="30"
+            pattern="?><:;/?><" 
+            title="ведіть свою адресу електронної пошти" placeholder="Введіть текст..." required>
+
+            <label for="years">Ваш вік</label>
+            <input type="text" id="years" name="years"
+            minlength="0" maxlength="3"
+            pattern="><?/"
+            title="Введіть свій вік" placeholder="Введіть текст...">
+
+            </fieldset>
+
+            <h3>Ваша стать</h3>
+
+            <label for="male">Чоловік</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="femail">Жінка</label>
+            <input type="radio" id="femail" name="gender" value="femail" required>
+
+            <label for="miss">Пропстити</label>
+            <input type="radio" id="miss" name="gender" value="miss" required>
+
+                <h3>Про що вам найбільше сподобалося?</h3>
+
+                <label for="cat-intelligence">інтелект Котів певної породи</label>
+                <input type="checkbox" id="cat-intelligence" name="prefrences" value="cat-intelligence" required>
+
+                <label for="cat-smile">Чеширська посішка британця висловухого</label>
+                <input type="checkbox" id="cat-smile" name="prefrences" value="cat-smile" required>
+
+                <label for="cat-mood">Види настроїв кота</label>
+                <input type="checkbox" id="cat-mood" name="prefrences" value="cat-mood" required>
+
+                <label for="frequncy">Частота розсилки</label>
+                <select name="frequncy" id="frequncy">
+                    <option value="daily">Щодня</option>
+                    <option value="weekly">Щотижня</option>
+                    <option value="monthly">Щомісяця</option>
+                </select>
+
+                <label for="wish">Побажання щодо контенту</label>
+                <textarea name="wish" id="wish" rows="4" cols="40" placeholder="Введіть текст..."></textarea>
+
+                <h3>Форма контенту</h3>
+
+                <label for="tell">Розповідь</label>
+                <input type="radio" id="tell" name="content" value="tell" required>
+
+                <label for="video">Відео</label>
+                <input type="radio" id="video" name="content" value="video" required>
+
+                <label for="podcast">Подкаст</label>
+                <input type="radio" id="podcast" name="content" value="podcast" required>
+
+
+        </form>
+        <h2><small>Ось фільм в якому є кіт з породою британеь висловухий</small></h2>
+        <a href="https://uakino.best/filmy/genre_adventure/2998-alsa-v-zadzerkall.html">Аліса в задзеркаллі</a>
+        <p>&copy; <b>2026 Проект створив Пафік Максим</b><br>Дякую за увагу!</p>
+
+    </footer>
+</body>
+
+</html>
